@@ -19,7 +19,7 @@ The easiest way to get started is to clone the repository:
 
 ```bash
 # Get the repo
-sudo git clone https://github.com/emrtnm/lamp-bash-script-for-ubuntu.git
+sudo git clone https://github.com/primercs/emrtnm-lamp-bash-script-for-ubuntu.git
 
 # Chmod 
 sudo chmod +x ./lamp.sh
