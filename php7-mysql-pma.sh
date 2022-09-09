@@ -21,11 +21,19 @@ sudo cat ./apache2.conf >> /etc/apache2/apache2.conf
 sudo echo "<?php phpinfo();" >> /var/www/html/index.php
 
 printf $DIVIDER
-printf "PHP7.4 is installing..."
+printf "Libs is installing..."
 printf $DIVIDER
 sudo apt update; sudo apt install libicu65 -y;
+
+printf $DIVIDER
+printf "Libs has been installed.\n"
+printf $DIVIDER
+
+printf $DIVIDER
+printf "PHP7.4 is installing..."
+printf $DIVIDER
 sudo add-apt-repository -y ppa:ondrej/php && sudo apt-get update;
-sudo apt-get install php7.4 libapache2-mod-php7.4 php7.4-cli php7.4-gd php7.4-mysql php7.4-imap php7.4-curl php7.4-intl php7.4-pspell php7.4-sqlite3 php7.4-tidy php7.4-xmlrpc php7.4-xsl php7.4-zip php7.4-mbstring php7.4-soap php7.4-opcache php7.4-common php7.4-json php7.4-readline php7.4-xml -y
+sudo apt-get install php7.4 libapache2-mod-php7.4 php7.4-cli php7.4-gd php7.4-mysql php7.4-imap php7.4-curl php7.4-intl php7.4-ssh2 php7.4-pspell php7.4-sqlite3 php7.4-tidy php7.4-xmlrpc php7.4-xsl php7.4-zip php7.4-mbstring php7.4-soap php7.4-opcache php7.4-common php7.4-json php7.4-readline php7.4-xml -y;
 
 printf $DIVIDER
 printf "PHP7.4 has been installed.\n"
